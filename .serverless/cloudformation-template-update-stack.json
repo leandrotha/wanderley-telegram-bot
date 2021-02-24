@@ -185,7 +185,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/wanderley-bot/dev/1613234399288-2021-02-13T16:39:59.288Z/wanderley-bot.zip"
+          "S3Key": "serverless/wanderley-bot/dev/1614191638416-2021-02-24T18:33:58.416Z/wanderley-bot.zip"
         },
         "Handler": "wanderley.lambda_handler",
         "Runtime": "python3.8",
@@ -203,14 +203,14 @@
         "WanderleyLogGroup"
       ]
     },
-    "WanderleyLambdaVersionYIftVE9f38ndo5gDYSEHSufRgADWjlveGLxtDBcU": {
+    "WanderleyLambdaVersions0M37kBFy3xHrD2EhVqKkyOq9CmSTlok4YZn500PBDM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "WanderleyLambdaFunction"
         },
-        "CodeSha256": "gPNVHtHvATaPxTO+aCpJx1LinnITyaGZMtB44czC4J0="
+        "CodeSha256": "+2100yMM5HUbUAuFjue1QxHv4fWBcxx6/Pp2xDnJbbg="
       }
     },
     "ApiGatewayRestApi": {
@@ -271,7 +271,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1613234386165": {
+    "ApiGatewayDeployment1614191615657": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -330,7 +330,7 @@
     "WanderleyLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "WanderleyLambdaVersionYIftVE9f38ndo5gDYSEHSufRgADWjlveGLxtDBcU"
+        "Ref": "WanderleyLambdaVersions0M37kBFy3xHrD2EhVqKkyOq9CmSTlok4YZn500PBDM"
       }
     },
     "ServiceEndpoint": {
