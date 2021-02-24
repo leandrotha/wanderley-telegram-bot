@@ -2,7 +2,7 @@ import json
 import boto3
 from telegram import Bot, Update
 from telegram.ext import CommandHandler, Dispatcher, Filters, MessageHandler
-from handlers import opiniao, meajuda, ideia, start, unknown, caule
+from handlers import opiniao, meajuda, ideia, start, unknown, caule, joelho
 
 #fetch bot token from AWS
 
@@ -18,6 +18,7 @@ dispatcher.add_handler(CommandHandler("opiniao", opiniao))
 dispatcher.add_handler(CommandHandler("meajuda", meajuda))
 dispatcher.add_handler(CommandHandler("ideia", ideia))
 dispatcher.add_handler(CommandHandler("caule", caule))
+dispatcher.add_handler(CommandHandler("joelho", joelho))
 dispatcher.add_handler(MessageHandler(Filters.command, unknown))
 
 def lambda_handler(event, context):
